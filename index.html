@@ -1,0 +1,138 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY INTRO </title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: cursive;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header a {
+            color: #fff;
+            text-decoration: none;
+            margin-right: 1rem;
+        }
+
+        .header a:hover {
+            color: #ccc;
+        }
+        .header img {
+            margin-right: 1rem;
+            height: 80px;
+            width: 80px;
+            border-radius: 100%;
+            padding: 5px;
+            animation-name: slideIn;
+            animation-duration: 2s;
+            animation-iteration-count: 1;
+        }
+        @keyframes slideIn {
+            0% {transform: translateX(-100%);}
+            100% {transform: translateX(0%);}
+          }
+
+        nav {
+            display: flex;
+            align-items: center;
+        }
+
+        nav a {
+            color: #333;
+            text-decoration: none;
+            margin-right: 1rem;
+            padding: 0.5rem;
+        }
+
+        nav a:hover {
+            background-color: #eee;
+            color: #333;
+        }
+
+        .hero {
+            background-image: url('introbgimg.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            
+            align-items: center;
+            justify-content: center;
+            text-align: left;
+            color: #fff;
+            font-size: 2rem;
+            animation-name: colorChange;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-duration: 2s;
+
+            
+        }
+        @keyframes colorChange {
+            0% {color: rgb(177, 83, 223);}
+            50% {color: rgba(244, 142, 91, 0.746);}
+            100% {color: rgb(143, 149, 20);}
+          }
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        footer p {
+            margin-bottom: 0;
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+            }
+
+            nav {
+                flex-direction: column;
+            }
+
+            nav a {
+                margin: 0.5rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div>
+            <img src="school im.jpg"></a>
+        </div>
+        <nav>
+            <a href="about me.html">Home</a>
+            <a href="https://www.youtube.com/">About</a>
+            <a href="contactme.html">Contact</a>
+        </nav>
+    </header>
+    <section class="hero">
+        <h1>Welcome </h1>
+    </section>
+    <footer class="footer">
+        <p>&copy; 2024 ANSHU AMAN. All rights reserved.</p>
+    </footer>
+</body>
+</html>
